@@ -15,7 +15,7 @@ let db = new sqlite3.Database('./books.db', (err) => {
   console.log('Connected to the in-memory SQLite database.');  
   
   db.serialize(() => {  
-    db.run('CREATE TABLE IF NOT EXISTS books (id INTEGER PRIMARY KEY AUTOINCREMENT, title TEXT, author TEXT, isbn TEXT, context TEXT)', (err) => {  
+    db.run('CREATE TABLE IF NOT EXISTS books (id INTEGER PRIMARY KEY AUTOINCREMENT, title727 TEXT, author727 TEXT, isbn727 TEXT, context727 TEXT)', (err) => {  
       if (err) {  
         return console.error(err.message);  
       }  
@@ -28,11 +28,11 @@ let db = new sqlite3.Database('./books.db', (err) => {
 // Function to insert books into the database  
 function insertBooks() {  
   const insertBook = () => {  
-    rl.question('Enter book title 727: ', (title) => {  
-      rl.question('Enter book author 727: ', (author) => {  
-        rl.question('Enter book ISBN 727: ', (isbn) => {  
-          rl.question('Enter book context 727: ', (context) => {  
-            db.run('INSERT INTO books (title, author, isbn, context) VALUES (?, ?, ?, ?)', [title, author, isbn, context], (err) => {  
+    rl.question('Enter book title 727: ', (title727) => {  
+      rl.question('Enter book author 727: ', (author727) => {  
+        rl.question('Enter book ISBN 727: ', (isbn727) => {  
+          rl.question('Enter book context 727: ', (context727) => {  
+            db.run('INSERT INTO books (title, author, isbn, context) VALUES (?, ?, ?, ?)', [title727, author727, isbn727, context727], (err) => {  
               if (err) {  
                 return console.error(err.message);  
               }  
@@ -71,7 +71,7 @@ function listBooks() {
     }  
     console.log('All books:');  
     rows.forEach((row) => {  
-      console.log(`ID: ${row.id}, Title: ${row.title}, Author: ${row.author}, ISBN: ${row.isbn}, Context: ${row.context}`);  
+      console.log(`ID: ${row.id}, Title: ${row.title727}, Author: ${row.author727}, ISBN: ${row.isbn727}, Context: ${row.context727}`);  
     });  
     rl.close();  
   });  
