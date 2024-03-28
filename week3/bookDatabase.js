@@ -1,4 +1,4 @@
-console.log('I am Zekrom,my IP is 192.168.137.1, Mac address is 70-32-17-D0-6F-6A.NCC student ID is 727')
+console.log('I am Zekrom,my IP is 192.168.137.1, Mac address is 70-32-17-D0-6F-6A.NCC student ID is 223190727')
 const sqlite3 = require('sqlite3').verbose();  
 const readline = require('readline');  
   
