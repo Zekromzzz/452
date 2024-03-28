@@ -28,10 +28,10 @@ let db = new sqlite3.Database('./books.db', (err) => {
 // Function to insert books into the database  
 function insertBooks() {  
   const insertBook = () => {  
-    rl.question('Enter book title: ', (title) => {  
-      rl.question('Enter book author: ', (author) => {  
-        rl.question('Enter book ISBN: ', (isbn) => {  
-          rl.question('Enter book context: ', (context) => {  
+    rl.question('Enter book title 727: ', (title) => {  
+      rl.question('Enter book author 727: ', (author) => {  
+        rl.question('Enter book ISBN 727: ', (isbn) => {  
+          rl.question('Enter book context 727: ', (context) => {  
             db.run('INSERT INTO books (title, author, isbn, context) VALUES (?, ?, ?, ?)', [title, author, isbn, context], (err) => {  
               if (err) {  
                 return console.error(err.message);  
