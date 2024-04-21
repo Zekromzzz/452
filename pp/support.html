@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="1.css">  
+</head>
+<body>
+<div class="header">
+    <img src="fish.png" width="80px" height="80px"><h1>Fish Technology</h1>
+  </div>
+<div class="topnav">
+  <a href="index.html">Home</a>
+  <a href="support.html">Support</a>
+  <a href="product.html">Product</a>
+  <a href="about.html">About us</a>
+  <a href="blog.html">Blog</a>
+  <a href="shopping.html" style="float:right">Shop</a>
+  </div>
+  <h1>If you need help</h1> 
+  <div class="box-container">  
+    <div class="box" id="box1">  
+      <p>1.Submit 
+          questions by email</p>  
+      <div class="arrow"></div>  
+    </div>  
+    <div class="box" id="box2">  
+      <p>2.Waiting 
+          customer service reply</p>  
+      <div class="arrow"></div>  
+    </div>  
+    <div class="box" id="box3">  
+      <p>3.Fill out customer service form</p>  
+      <div class="arrow"></div>  
+    </div>  
+    <div class="box" id="box4">  
+      <p>4.Waiting for staff to provide on-site service</p>  
+      <!-- The last box has no arrows -->  
+    </div>  
+  </div>
+  <script>  
+      function showBox(boxId, delay) {  
+        setTimeout(function() {  
+          document.getElementById(boxId).classList.add('show');  
+        }, delay);  
+      }  
+        
+      //Display boxes one by one, with a delay of 1 second between each box 
+      showBox('box1', 0);  
+      showBox('box2', 500);  
+      showBox('box3', 1000);  
+      showBox('box4', 1500);   
+      </script>    
+  <br><br><br><br><br><br><hr>
+  <h1>In addition, you can also contact us through the following methods</h1>
+  
+  <div class="icon">
+    <a href="https://www.facebook.com/"><img src="icon/twitterx.png"></a>
+    <a href="https://twitter.com/"><img src="icon/facebook.png"></a>
+    <a href="https://instagram.com/"><img src="icon/instagram.png"></a>
+    <a href="https://youtube.com/"><img src="icon/youtube.png"></a>
+  </div>
+  
+  <div class="footer">
+    <img src="fish.png" width="80px" height="80px"><h3>Copyright Information&copy; 2024 Fish Technology <br>Website
+      Contact information: 844735617@qq.com |Phone: 114-514-9999 by Zekrom</h3>
+  </div>
+  </body>
+  </html>
